@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampions - Agendamento</title>
+    <link rel="stylesheet" href="./css/agendamento.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+        <img src="img/lampions.png" id="logo">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#cortes">Cortes</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+        <div class="logo">
+            <div class="content">
+                <h1>Faça Seu Agendamento</h1>
+                <br>
+                <form id="formAgendamento">
+        
+                    <!--NOME-->
+                        <input type="text" id="nome" placeholder="Digite seu nome completo" required pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
+                        <br><br>
+
+                        <!--CPF-->
+                        <input type="text" placeholder="Digite seu CPF (somente números)" autocomplete="off" maxlength="14" required id="cpf">
+                        <script src="./js/js.js"></script>
+                        <br><br>
+        
+                        <!--EMAIL-->
+                        <input type="email" placeholder="Digite seu E-mail" required id="email">
+                        <br><br>
+        
+                        <!--CONTATO-->
+                            <input type="tel" placeholder="Número para contato" required maxlength="14" id="tel">
+                            <script src="./js/tel.js"></script>
+                        <br>
+        
+                        <!--ESTILO DE CORTE-->
+                        <!-- <td>Qual corte você quer realizar?</td> -->
+                        <br>
+                        <div class="hora-data">
+                        <select name="hora" id="hora">
+                            <option selected disabled value="">Horários</option>
+                            <option value="08:00">08:00 às 09:00</option>
+                            <option value="10:00">10:00 às 11:00</option>
+                            <option value="13:00">13:00 às 14:00</option>
+                            <option value="14:30">14:30 às 15:30</option>
+                            <option value="16:00">16:00 às 17:00</option>
+                        </select>
+                        <br>
+        
+                        <!--AGENDAMENTO-->
+                            <input type="date" required id="dia">
+                        </div>
+                        <br>
+
+                        <div class="corte-barbeiro">
+                        <select name="Cortes" id="cortes" required>
+                            <option selected disabled value="">Cortes</option>
+                            <option value="Degradê">Degradê</option>
+                            <option value="Social">Social</option>
+                            <option value="Barba">Barba</option>
+                            <option value="Degrade+barba">Degrade+barba</option>
+                            <option value="Social+barba">Social+barba</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+
+                        <select name="barbeiro" id="barbeiro">
+                            <option selected disabled value="">Barbeiros</option>
+                            <option value="">João Vitor</option>
+                            <option value="">Kaleb</option>
+                            <option value="">Sharles</option>
+                            <option value="">Alexandre</option>
+                            <option value="">Andrey</option>
+                        </select>
+                        </div>	
+                        <br>
+                        <!--BOTÃO-->
+                        <button type="submit">Confirmar agendamento</button>
+                </form >
+                </div>
+        </div>
+
+<!-- FOOTER -->
+
+    <footer id="footer">
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/lampions_barbershop/" target="_blank"><img
+                    src="./img2/insta-icon.png"></a>
+            <a href="https://www.youtube.com/channel/UCY02iST3S7VwukWDpTu1HCw" target="_blank"><img
+                    src="./img2/youtube-icon.png" alt=""></a>
+            <a href="mailto:lampionsbarbearia2022@gmail.com" target="_blank"><img src="./img2/email-icon.png"></a>
+        </div>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1990545136673!2d-38.57710688588383!3d-3.766816144422269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c01797285bb%3A0xa8888be05f940563!2sCentro%20Universit%C3%A1rio%20Est%C3%A1cio%20-%20Campus%20Parangaba!5e0!3m2!1spt-BR!2sbr!4v1668291440475!5m2!1spt-BR!2sbr"
+                width="320" height="220" style="border: 2px solid white; border-radius: 10px; margin: 15px;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+        </div>
+    </footer>
+</body >
+</html >
